@@ -32,7 +32,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-4">
-                    <h3><a href="<%- config.root %> <%- post.path %>"><%- post.title %></a></h3>
+                    <h3><a href="<%- config.root %><%- post.path %>"><%- post.title %></a></h3>
                     <span>
                         <%- partial('post/meta', {post: post}) %>
                     </span>
@@ -47,7 +47,7 @@
                     </p>
                     <% if (theme.excerpt_link) { %>
                     <p class="pull-right readMore">
-                        <a href="<%- config.root %> <%- post.path %>"><%= theme.excerpt_link %>...</a>
+                        <a href="<%- config.root %><%- post.path %>"><%= theme.excerpt_link %>...</a>
                     </p>
                     <% } %>
                 </div>

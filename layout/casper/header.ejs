@@ -4,16 +4,26 @@
         <img src="<%- config.root %>img/close.png" alt="Close"/>
     </div>
 
+    <div style="width: 288px; margin-top: 15px">
+        <img style="margin-left: 34px; width: 88px; height: 88px; border-radius: 50%; background-color: #FFFFFF; display: block"
+             src="<%- config.root %>img/headPhoto.png"/>
+        <div style="margin-top: 12px; margin-left: 34px">
+            <p style="font-size: 20px; color: #FFFFFF">ChenXj</p>
+            <p style="font-size: 16px; color: #FFFFFF; margin-bottom: 0">chenxj1993@gmail.com</p>
+            <p style="font-size: 16px; color: #FFFFFF">ShangHai</p>
+        </div>
+    </div>
+
     <!-- Lists in Slidebars -->
     <ul class="sb-menu">
         <li><a href="<%- config.root %>" class="animsition-link" title="Home">Home</a></li>
-        <li><a href="<%- config.root %> <%- config.archive_dir %>" class="animsition-link" title="archive">archives</a>
+        <li><a href="<%- config.root %><%- config.archive_dir %>" class="animsition-link" title="archive">Archives</a>
         </li>
 
         <!-- Dropdown Menu -->
         <% if (theme.works && theme.works.length){ %>
         <li>
-            <a class="sb-toggle-submenu">Works<span class="sb-caret"></span></a>
+            <a class="sb-toggle-submenu">Tags<span class="sb-caret"></span></a>
             <ul class="sb-submenu">
                 <% theme.works.forEach(function(item){ %>
                 <li><a href="<%- item.works_url %>" target="_BLANK" class="animsition-link"><%= item.works_name %></a>
@@ -27,7 +37,7 @@
             <a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
             <ul class="sb-submenu">
                 <% site.categories.sort('name').each(function(item){ %>
-                <li><a href="<%- config.root %> <%- item.path %>" class="animsition-link"><%= item.name %>
+                <li><a href="<%- config.root %><%- item.path %>" class="animsition-link"><%= item.name %>
                         <small>(<%= item.posts.length %>)</small>
                     </a></li>
                 <% }); %>
