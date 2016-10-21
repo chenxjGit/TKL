@@ -1,17 +1,24 @@
 # config
+email: chenxj1993@gmail.com
+address: ShangHai
+
 cover: /img/bg_img.jpg
 logo: /img/logo.png
 top_saying:
 - title: YOU'VE MADE A <span>BRAVE</span> DECISION, WELCOME.
 - content: 每一个不曾起舞的日子都是对生命的辜负。
-bottom_saying: 虽然还没想好写点什么，但是总觉得这里放句话比较和谐。
+bottom_saying: 每一个不曾起舞的日子都是对生命的辜负。
 
 # Miscellaneous
 github: https://github.com/chenxjGit
 twitter: https://twitter.com/
 facebook: https://www.facebook.com/
-google: https://google.com/
 weibo: http://weibo.com/
+zhihu: http://www.zhihu.com/people/yangzj1992
+douban: http://www.zhihu.com/people/yangzj1992
+instagram: https://google.com/
+google: https://google.com/
+baidu: http://www.baidu.com/p/yangzj1992/
 
 # Content
 excerpt_link: Read More
@@ -23,19 +30,14 @@ highlightjs: vs
 #duoshuo name
 duoshuo: maybeds
 
-#Works
-works:
-- works_name: AAA
-  works_url: /
-- works_name: Movie
-  works_url: /
-
 #Links
 links:
 - name: ChenXj
   link: http://chenxjGit.github.io/
+  description: 我的Github
 - name: TKL(Hexo Theme)
   link: https://github.com/chenxjGit/TKL
+  description: Blog主题
 
 #about  timeline
 timeline:
@@ -44,6 +46,6 @@ timeline:
 - num: 2
   word: 2014/11/29-XXX
 - num: 3
-  word: 2015/02/18-DDD
+  word: 2015/02/18-Latest
 - num: 4
   word: More

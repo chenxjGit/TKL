@@ -692,8 +692,7 @@ nav i.icon-basic-eye {
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover,
 .navbar .nav > li > a:active {
-    /*color: #777;*/
-    color: #ffffff;
+    color: #999999;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -856,6 +855,59 @@ html.sb-init.sb-active.sb-active-right #projects .filter-item div a {
     color: #fff; /* Link hover colour. */
 }
 
+.sb-overview {
+    text-align: center;
+}
+
+.sb-overview .sb-author img {
+    height: 100px;
+    width: 100px;
+    border: 2px solid #333333;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+}
+
+.sb-overview .sb-author p {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.sb-overview .sb-item {
+    display: inline-block;
+    padding: 0 15px;
+    border-left: 1px solid #333;
+    text-align: center;
+}
+
+.sb-overview .sb-item:first-child {
+    border: 0;
+}
+
+.sb-item .sb-item-count {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+}
+
+.sb-item .sb-item-name {
+    display: block;
+    font-size: 13px;
+}
+
+.sb-overview .sb-rss a {
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 16px;
+    color: #fc6423;
+    border: 1px solid #fc6423;
+    border-radius: 3px;
+}
+
+.sb-overview .sb-rss a:hover {
+    color: #FFFFFF;
+    background-color: #fc6423;
+}
+
 /* Off-canvas menu items */
 .sb-menu {
     padding: 34px 34px 24px;
@@ -982,16 +1034,14 @@ span.sb-caret { /* Caret Down */
 }
 
 #hero h2 {
-    /*color: #151515;*/
-    color: #ffffff;
+    color: #FFFFFF;
     margin-bottom: 20px;
     display: inline-block;
     padding: 14px;
 }
 
 #hero p {
-    /*color: #333;*/
-    color: #ffffff;
+    color: #FFFFFF;
     font-family: 'Georgia', serif, Helvetica, "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
     font-size: 18px;
     display: inline-block;
@@ -3884,13 +3934,13 @@ footer .footer_bottom {
     content: "\e631";
 }
 
+.icon-github:before {
+    content: "\e636";
+}
+
 .icon-twitter:before {
     content: "\e630";
     font-size: 1.1em;
-}
-
-.icon-google-plus:before {
-    content: "\e62d";
 }
 
 .icon-facebook:before {
@@ -3901,8 +3951,52 @@ footer .footer_bottom {
     content: "\e666";
 }
 
-.icon-github:before {
-    content: "\e636";
+.icon-google-plus:before {
+    content: "\e62d";
+}
+
+.icon-Popular_GitHub:hover {
+    color: #4078c0;
+}
+
+.icon-Popular_Twitter:hover {
+    color: #55acee;
+}
+
+.icon-Popular_Facebook:hover {
+    color: #415d98;
+}
+
+.icon-CN_sina_weibo:hover {
+    color: #e72c40;
+}
+
+.icon-CN_zhihu:hover {
+    color: #0d78e9;
+}
+
+.icon-CN_douban:hover {
+    color: #78bb81;
+}
+
+.icon-Popular_Instagram:hover {
+    color: #d82f82;
+}
+
+.icon-google-plus:hover {
+    color: #4285f4;
+}
+
+.icon-CN_tencent_wechat:hover {
+    color: #51c332;
+}
+
+.icon-CN_tencent_qzone:hover {
+    color: #fcb920;
+}
+
+.icon-Popular_G:hover {
+    color: #dc5046;
 }
 
 /*---------------- END ------------------------*/
