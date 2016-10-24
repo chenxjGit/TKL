@@ -26,7 +26,7 @@
 <!-- ============================ END Hero Image =========================== -->
 
 <%
-title = "目录";
+title = "标签";
 %>
 <% if (pagination == 2){ %>
 <% page.posts.each(function(item){ %>
@@ -40,13 +40,13 @@ title = "目录";
             <div class="col-md-2 article_index">
                 <div class="row">
                     <h3><%= title %></h3>
-                    <%- list_categories() %>
+                    <%- list_tags() %>
                 </div>
             </div>
             <div class="col-md-9 col-md-offset-1">
                 <div class="row">
                     <% var i = 0 %>
-                    <% page.posts.sort('date', 'desc').each(function(item){ %>
+                    <% site.posts.sort('date', 'desc').each(function(item){ %>
                     <% if(i == 4){ %>
                 </div>
                 <div class="row boxes">

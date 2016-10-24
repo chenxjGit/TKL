@@ -35,9 +35,9 @@ title = "标签";
 <%- partial('pagination') %>
 <% } else { %>
 <section id="services">
-    <div class="container article-list">
+    <div class="container article_list">
         <div class="row">
-            <div class="col-md-2 category_index">
+            <div class="col-md-2 article_index">
                 <div class="row">
                     <h3><%= title %></h3>
                     <%- list_tags() %>
@@ -46,7 +46,7 @@ title = "标签";
             <div class="col-md-9 col-md-offset-1">
                 <div class="row">
                     <% var i = 0 %>
-                    <% site.posts.sort('date', 'desc').each(function(item){ %>
+                    <% page.posts.sort('date', 'desc').each(function(item){ %>
                     <% if(i == 4){ %>
                 </div>
                 <div class="row boxes">
@@ -56,24 +56,16 @@ title = "标签";
                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
                         <% if (item.link){ %>
                         <% if (item.title){ %>
-                        <h4 class="title link">
-                            <a href="<%- item.link %>" target="_blank"
-                               rel="nofollow noopener noreferrer"><%= item.title %></a>
-                        </h4>
+                        <h4 class="title link"><a href="<%- item.link %>" target="_blank"><%= item.title %></a></h4>
                         <% } else { %>
-                        <h4 class="title link">
-                            <a href="<%- item.link %>" target="_blank"
-                               rel="nofollow noopener noreferrer"><%= item.link %></a>
-                        </h4>
+                        <h4 class="title link"><a href="<%- item.link %>" target="_blank"><%= item.link %></a></h4>
                         <% } %>
                         <% } else { %>
-                        <h4 class="title">
-                            <a href="<%- config.root %><%- item.path %>"><%= item.title %></a>
-                        </h4>
+                        <h4 class="title"><a href="<%- config.root %><%- item.path %>"><%= item.title %></a></h4>
                         <% } %>
                         <p>
-                            <time datetime="<%= item.date.toDate().toISOString() %>">
-                                <a href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a>
+                            <time datetime="<%= item.date.toDate().toISOString() %>"><a style="color: #008e59"
+                                                                                        href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a>
                             </time>
                         </p>
                     </div>
@@ -91,11 +83,12 @@ title = "标签";
         </div>
     </div>
 </section>
+
 <script>
     $(function () {
-        $(".article-list").css('min-height', $(window).height() - $("footer").height() - $("#statement").height() - $("#navigation").height() - 50);
-        $(".archive-list-count").addClass("badge");
+        $(".article_list").css('min-height', $(window).height() - $("footer").height() - $("#statement").height() - $("#navigation").height() - 50);
         $(".category-list-count").addClass("badge");
         $(".tag-list-count").addClass("badge");
+        $(".archive-list-count").addClass("badge");
     });
 </script>
